@@ -1,6 +1,6 @@
 package com.giovanni.zookeeperone;
-import com.giovanni.zookeeperone.models.Mammal;
 import com.giovanni.zookeeperone.models.Gorilla;
+import com.giovanni.zookeeperone.models.Mammal;
 
 public class ZooKepperOneApplication {
 
