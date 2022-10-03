@@ -8,12 +8,12 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.giovanni.daikichipathvar</groupId>
-	<artifactId>daikichipathvar</artifactId>
+	<groupId>com.giovanni.fruityloops</groupId>
+	<artifactId>fruityloops</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>daikichipathvar</name>
-	<description>Assignment Daikichi Path Variables</description>
+	<name>fruityloops</name>
+	<description>Assignment Fruity Loops</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
@@ -42,7 +42,27 @@
 	    <dependency>	
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-   	    </dependency>
+		</dependency>
+	    <dependency>	
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+        </dependency>
+        <dependency>
+	        <groupId>org.webjars</groupId>
+	        <artifactId>webjars-locator</artifactId>
+	        <version>0.30</version>
+	    </dependency>
+        <dependency>
+	        <groupId>org.webjars</groupId>
+	        <artifactId>bootstrap</artifactId>
+	        <version>5.0.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.webjars</groupId>
+		    <artifactId>jquery</artifactId>
+		    <version>3.6.0</version>
+		</dependency>
+    
 	</dependencies>
 
 	<build>
