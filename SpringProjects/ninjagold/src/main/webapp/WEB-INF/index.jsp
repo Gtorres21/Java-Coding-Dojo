@@ -35,8 +35,9 @@
 	<div id="head">
 	
 	<label>Your Gold:</label>
-	<input type="number" name="gold " value="${gold}" placeholder="0">
+	<input type="number" name="gold " value="${gold}">
 	</div>
+	
 	<div id="row" class="d-flex justify-content-evenly">
 		<div id="boxOne" class="col3 text-center">
 		<h2>Farm</h2>
@@ -81,7 +82,7 @@
 	<div><textarea rows="10" cols="200">You entered a ${name} and earned ${gold}.</textarea></div>
 	</div>
 	
-	<a href="/" class="btn btn-primary">Reset</a>
+	<a href="/delete" class="btn btn-primary">Reset</a>
 	
 	
 	
