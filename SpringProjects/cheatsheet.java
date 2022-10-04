@@ -48,3 +48,7 @@
     // Add to our main/resources folder
     // Add to application.properties: Creates path to our WEB-INF folder
     spring.mvc.view.prefix=/WEB-INF/
+
+
+    // import Session to your Controller
+    import javax.servlet.http.HttpSession;
