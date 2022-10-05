@@ -33,6 +33,25 @@
         <version>3.6.0</version>
     </dependency>
 
+    // JPA and MySQL Driver
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <scope>runtime</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    </dependency>
+
+    // Spring Boot Start Validations
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency> 
+
+
+
     // Must add on top of jsp file to use JSTL tags
     <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core"%>
 
@@ -48,6 +67,13 @@
     // Add to our main/resources folder
     // Add to application.properties: Creates path to our WEB-INF folder
     spring.mvc.view.prefix=/WEB-INF/
+
+    // Add to application.properties  to enable SQL.
+    spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA>>
+    spring.datasource.username=<<dbuser>>
+    spring.datasource.password=<<dbpassword>>
+    spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+    spring.jpa.hibernate.ddl-auto=update
 
 
     // import Session to your Controller
