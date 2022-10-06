@@ -1,3 +1,8 @@
+    // Spring Web , Spring Boot DevTools, ________ Spring Data JPA , MySQL Driver
+    
+    
+    
+    
     // Add to POM.XML file
     //    JSP 
         <dependency>
@@ -33,6 +38,7 @@
         <version>3.6.0</version>
     </dependency>
 
+    // If forget to check box when creating project
     // JPA and MySQL Driver
     <dependency>
         <groupId>mysql</groupId>
@@ -72,9 +78,10 @@
     spring.datasource.url=jdbc:mysql://localhost:3306/<<YOUR_SCHEMA>>
     spring.datasource.username=<<dbuser>>
     spring.datasource.password=<<dbpassword>>
-    spring.datasource.driver-class-name=com.mysql.jdbc.Driver
+    spring.datasource.driver-class-name=com.mysql.jdbc.Driver //Remove if getting Red Error Deprecated
     spring.jpa.hibernate.ddl-auto=update
-
+    //Add for Edit
+    spring.mvc.hiddenmethod.filter.enabled=true
 
     // import Session to your Controller
     import javax.servlet.http.HttpSession;
