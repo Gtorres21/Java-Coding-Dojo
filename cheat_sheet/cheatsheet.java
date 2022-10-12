@@ -1,4 +1,4 @@
-    // Spring Web , Spring Boot DevTools, ________ Spring Data JPA , MySQL Driver
+    // Spring Web , Spring Boot DevTools, ________ Spring Data JPA , MySQL Driver , jbcrypt, Sprint-boot-starter-validation
     
     
     
@@ -38,6 +38,12 @@
         <version>3.6.0</version>
     </dependency>
 
+    // Spring Boot Start Validations
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency> 
+
     // If forget to check box when creating project
     // JPA and MySQL Driver
     <dependency>
@@ -45,21 +51,27 @@
         <artifactId>mysql-connector-java</artifactId>
         <scope>runtime</scope>
     </dependency>
+
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-data-jpa</artifactId>
     </dependency>
 
-    // Spring Boot Start Validations
+    // BCrypt
     <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-validation</artifactId>
-    </dependency> 
-
-
+        <groupId>org.mindrot</groupId>
+        <artifactId>jbcrypt</artifactId>
+        <version>0.4</version>
+    </dependency>
 
     // Must add on top of jsp file to use JSTL tags
     <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core"%>
+
+
+
+    //Form Tag
+    <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+    <%@ page isErrorPage="true" %> 
 
     // <!-- ADD ONTO THE HEAD of JSP: for Bootstrap CSS -->
     <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />

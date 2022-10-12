@@ -48,4 +48,3 @@ public class BookService {
 
 }
 
-return ninjaRepo.findByDojoIdIs(dojoId);
